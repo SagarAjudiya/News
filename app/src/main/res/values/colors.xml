@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="orange">#C67C4E</color>
+    <color name="lightOrange">#FFF5EE</color>
+    <color name="textBlack">#2F2D2C</color>
+    <color name="textPlace">#989898</color>
+    <color name="bgBlack">#313131</color>
+    <color name="grey">#9B9B9B</color>
+    <color name="lightBlue">#2F4B4E</color>
+    <color name="alphaWhite">#F9F9F9</color>
+    <color name="lineGrey">#EAEAEA</color>
+    <color name="tabbg">#F2F2F2</color>
+    <color name="offBlack">#303336</color>
+</resources>
