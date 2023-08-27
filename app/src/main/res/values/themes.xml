@@ -1,6 +1,8 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Base.Theme.News" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
@@ -54,6 +56,30 @@
         <item name="android:textColor">@color/textBlack</item>
         <item name="android:textSize">@dimen/_20sp</item>
         <item name="fontFamily">@font/sora_bold</item>
+    </style>
+
+    <!--   Round ImageCorner -->
+    <style name="roundedImageView14" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/_14dp</item>
+    </style>
+
+<!--    Button-->
+    <style name="Button" parent="ThemeOverlay.Material3.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTint">@color/orange</item>
+        <item name="cornerRadius">@dimen/_16dp</item>
+        <item name="android:textSize">@dimen/_16dp</item>
+        <item name="fontFamily">@font/sora_bold</item>
+    </style>
+
+    <style name="Button.Small" parent="ThemeOverlay.Material3.Button">
+        <item name="android:textColor">@color/offBlack</item>
+        <item name="backgroundTint">@color/white</item>
+        <item name="android:textSize">@dimen/_12sp</item>
+        <item name="fontFamily">@font/sora_regular</item>
+        <item name="strokeColor">@color/black</item>
+        <item name="strokeWidth">@dimen/_1dp</item>
     </style>
 
 </resources>

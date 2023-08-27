@@ -23,6 +23,9 @@
     <dimen name="_50dp">50dp</dimen>
     <dimen name="_140dp">140dp</dimen>
     <dimen name="_100dp">100dp</dimen>
+    <dimen name="_200dp">200dp</dimen>
+    <dimen name="_300dp">300dp</dimen>
+    <dimen name="_150dp">150dp</dimen>
     <dimen name="_104dp">104dp</dimen>
 
 

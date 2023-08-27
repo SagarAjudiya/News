@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="filter"
+            type="com.simform.news.data.model.Filter" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:strokeWidth="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imgNews"
+                imageFromInt="@{filter.image}"
+                android:layout_width="@dimen/_28dp"
+                android:layout_height="@dimen/_28dp"
+                android:layout_marginHorizontal="@dimen/_8dp"
+                android:layout_marginVertical="@dimen/_8dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="@+id/materialTextView"
+                app:layout_constraintStart_toStartOf="@+id/materialTextView"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/roundedImageView14"
+                tools:src="@drawable/headline" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/materialTextView"
+                style="@style/Text12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_8dp"
+                android:layout_marginVertical="@dimen/_8dp"
+                android:text="@{filter.name.toUpperCase()}"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgNews"
+                tools:text="General" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>

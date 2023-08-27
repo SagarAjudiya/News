@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/news_nav"
+    app:startDestination="@id/navHeadlines">
+
+    <fragment
+        android:id="@+id/navHeadlines"
+        android:name="com.simform.news.ui.headlines.view.HeadlinesFragment"
+        android:label="fragment_headlines"
+        tools:layout="@layout/fragment_headlines" />
+    <fragment
+        android:id="@+id/navBookMark"
+        android:name="com.simform.news.ui.bookmark.view.BookMarkFragment"
+        android:label="fragment_book_mark"
+        tools:layout="@layout/fragment_book_mark" />
+    <fragment
+        android:id="@+id/navSources"
+        android:name="com.simform.news.ui.sources.view.SourcesFragment"
+        android:label="fragment_sources"
+        tools:layout="@layout/fragment_sources" />
+
+</navigation>
